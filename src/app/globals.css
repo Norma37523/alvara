@@ -147,9 +147,10 @@ input {
 }
 .brand img {
   display: block;
-  height: 30px;
-  width: auto;
-  margin: 0 6px;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 8px;
 }
 .brand small {
   display: block;
@@ -898,8 +899,10 @@ td .uni {
   margin: 14px 0 4px;
 }
 .login img {
-  height: 30px;
-  width: auto;
+  display: block;
+  width: 210px;
+  max-width: 100%;
+  height: auto;
 }
 .field {
   display: grid;
