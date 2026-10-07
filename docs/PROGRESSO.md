@@ -20,5 +20,7 @@
 |---|---|---|
 | F1-01 | `computeStatus` com testes | Concluída (`src/domain/status.ts`) |
 | F1-21 | `alertsDue` com testes | Concluída (`src/domain/alerts.ts`) |
-| F1-03 | Importação da planilha | Bloqueada: falta `reference/Controle_de_Alvaras_e_Licencas.xlsx` |
+| F1-03 | Importação da planilha | Concluída: 33 licenças, 12 empresas, 17 unidades gravadas; 2ª execução não altera nada |
+| F1-02 | View `licenses_with_status` | Conferida: bate com `computeStatus` na fixture |
+| F1-05 | Gatilho `license_history` | Conferido: 33 linhas geradas na importação |
 | F1-07 | Layout e telas | Bloqueada: falta `reference/gestao_alvaras_prototipo.html` e os logos |

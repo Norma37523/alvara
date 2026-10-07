@@ -10,7 +10,8 @@
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "import:xlsx": "tsx --env-file=.env.local scripts/import-xlsx.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
@@ -30,8 +31,10 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.9.9",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.3",
+    "xlsx": "^0.18.5"
   },
   "packageManager": "pnpm@12.9.1"
 }
