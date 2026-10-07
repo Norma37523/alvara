@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState, type FormEvent } from "react";
+import QRCode from "qrcode";
 import { z } from "zod";
 import { createBrowserSupabase } from "@/lib/supabase/browser";
 
@@ -40,10 +41,18 @@ export function MfaForm() {
       });
       if (cancelled) return;
       if (enrollError || !data) return setMode({ kind: "failed" });
+      // QR gerado aqui (maior e com margem branca) para os leitores conseguirem ler.
+      const qr = await QRCode.toDataURL(data.totp.uri, {
+        width: 320,
+        margin: 4,
+        errorCorrectionLevel: "M",
+        color: { dark: "#101028", light: "#FFFFFF" },
+      });
+      if (cancelled) return;
       setMode({
         kind: "enroll",
         factorId: data.id,
-        qr: data.totp.qr_code,
+        qr,
         secret: data.totp.secret,
       });
     })();
