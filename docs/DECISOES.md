@@ -9,3 +9,6 @@
 - 2026-10-07 — Importação: licença já existente (empresa + unidade + tipo) não é sobrescrita, para preservar edições manuais. Rótulos de unidade: `matriz`, `filial Foz`, `matriz única`.
 - 2026-10-07 — O link da coluna L é só "Abrir no Drive" (texto, sem URL); não foi guardado. Os arquivos virão do Drive na F1-13.
 - 2026-10-07 — Inconsistências para correção pelo dono: Bombeiros com órgão "Prefeitura Municipal" em NP Partners, Gelic e Vanlink (o escopo citava só as duas primeiras).
+- 2026-10-07 — Telas leem o banco com a service role, depois de `requireStaff()` (login, MFA concluído e perfil ativo da equipe). RLS por empresa e papéis de cliente ficam para a F2-01. O `proxy.ts` é só checagem otimista; a autorização é do servidor.
+- 2026-10-07 — O Supabase Auth não é criado por script: a conta é criada pelo dono no painel e `pnpm make:staff` só atribui o perfil.
+- 2026-10-07 — Logos vieram dos arquivos `Ass-HORIZ_*` da identidade visual e estão em `public/brand/`. O manual de identidade (`Norma Contabil_IDV.pdf`) não foi versionado.

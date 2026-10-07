@@ -11,9 +11,11 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "format": "prettier --write .",
-    "import:xlsx": "tsx --env-file=.env.local scripts/import-xlsx.ts"
+    "import:xlsx": "tsx --env-file=.env.local scripts/import-xlsx.ts",
+    "make:staff": "tsx --env-file=.env.local scripts/make-staff.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.2",
     "next": "16.3.8",
     "react": "19.2.8",

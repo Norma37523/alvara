@@ -23,4 +23,9 @@
 | F1-03 | Importação da planilha | Concluída: 33 licenças, 12 empresas, 17 unidades gravadas; 2ª execução não altera nada |
 | F1-02 | View `licenses_with_status` | Conferida: bate com `computeStatus` na fixture |
 | F1-05 | Gatilho `license_history` | Conferido: 33 linhas geradas na importação |
-| F1-07 | Layout e telas | Bloqueada: falta `reference/gestao_alvaras_prototipo.html` e os logos |
+| F1-06 | Login + MFA TOTP + proxy | Código pronto; falta testar com o primeiro usuário (criar em Authentication > Users e rodar `pnpm make:staff`) |
+| F1-07 | Layout, filtros, tema, logos | Concluída (porta do protótipo) |
+| F1-08 | Dashboard | Concluída; números conferidos pela fixture |
+| F1-09 | Documentos (busca, filtros, ordenação) | Concluída |
+| F1-10 | Renovações | Concluída |
+| F1-11 | Painel de detalhe | Leitura pronta; edição pendente |
