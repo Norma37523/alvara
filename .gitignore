@@ -48,3 +48,5 @@ next-env.d.ts
 # dados de clientes: nunca versionar (repositório público)
 /reference/*.xlsx
 /reports/
+/reference/*.html
+/reference/*.pdf
